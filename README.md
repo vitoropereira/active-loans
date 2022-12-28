@@ -1,23 +1,81 @@
-# Sobre o projeto
+<h1 align="center">
+    <img alt="My Family" title="#MyFamily" src="./public/Business-crisis-amico.png" width="145px" height="145px" />
+    <br/>
+Active Loans
+</h1>
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitoropereira/active-loans?color=%2304D361">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vitoropereira/active-loans">
+  <a href="https://github.com/vitoropereira/active-loans/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vitoropereira/active-loans">
+  </a>
+   <a href="https://github.com/vitoropereira/active-loans/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/vitoropereira/active-loans?style=social">
+  </a>
+</p>
 
-Este projeto tem como objetivo coletar dados de "Posições em Aberto de Empréstimo de Ativos" através de uma job no Laravel que baixa um arquivo CSV da B3 e salva os dados no banco de dados.
+## 🛠 Tecnologias
 
-É possível fazer cadastro e login no sistema. Ao fazer login e entrar no dashboard, a job é ativada e busca os dados dos últimos 5 dias. Na aba "Dados b3", é possível selecionar uma data e ativar a job para buscar os dados daquela data específica.
+Algumas ferramentas que estão sendo usadas neste projeto:
 
-Existe também uma opção "Ver Gráficos" que leva para outra tela onde é possível selecionar um ativo e visualizar o gráfico deste ativo.
+- [Laravel][Laravel]
+- [Vue.JS][vuejs]
+- [VsCode][vscode]
 
-Este projeto foi desenvolvido como um teste de emprego na empresa Jumba FYT Tecnologia, utilizando Laravel e Vue.js.
+## 🚀 Como executar o projeto
 
-Para rodar o projeto, é necessário fazer uma cópia do arquivo `.env.example` e configurar um banco de dados MySQL. Em seguida, execute os seguintes comandos:
+### Pré-requisitos
 
-1. `composer install` para instalar as dependências do Laravel
-2. `npm install` para instalar as dependências do Vue.js
-3. `php artisan migrate:refresh` para rodar as migrações do banco de dados
-4. `php artisan queue:work` para deixar os jobs ativos
-5. `php artisan serve` para iniciar o servidor
-6. `npm run dev` para iniciar o Vue.js
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js][nodejs], [Laravel][Laravel], outras...
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
 
-Este projeto está sob licença liberada para uso geral.
+### 🧭 Rodando a aplicação
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/vitoropereira/active-loans
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd active-loans
+
+# Instale as dependências do Laravel
+$ composer install
+
+# Instale as dependências do Vue.js
+$ npm install
+
+# Execute as migrações do banco de dados
+$ php artisan migrate:refresh
+
+# Deixe os jobs ativos
+$ php artisan queue:work
+
+# Inicie o servidor
+$ php artisan serve
+
+# Inicie o Vue.js em modo de desenvolvimento
+$ npm run dev
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:8000
+```
+
+## 📑 O projeto
+
+Este projeto é um sistema web que coleta dados de "Posições em Aberto de Empréstimo de Ativos" da B3 (Bolsa de Valores Brasileira) através de uma job (tarefa automatizada) no Laravel. Os dados são baixados em formato CSV e salvos em um banco de dados. 
+O sistema permite que os usuários se cadastrem e façam login. É possível também selecionar uma data específica para visualizar os dados relativo as "Posições em Aberto de Empréstimo de Ativo" do dia selecionado. Além disso, há uma opção para visualizar gráficos de um ativo selecionado. 
+O projeto foi desenvolvido com Laravel e Vue.js como um teste de emprego para a empresa Jumba FYT Tecnologia.
+
+## 😯 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
 
 
-
+[Laravel]: https://laravel.com/
+[vuejs]: https://vuejs.org/
+[vscode]: https://code.visualstudio.com/
+[nodejs]:https://nodejs.org/
