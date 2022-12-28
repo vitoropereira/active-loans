@@ -17,7 +17,14 @@ class LendingOpenPositionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'RptDt' => fake()->date(),
+            'TckrSymb' => fake()->firstName(),
+            'ISIN' => fake()->lastName(),
+            'Asst' => fake()->name(),
+            'BalQty' => fake()->numberBetween(2, 10000),
+            'TradAvrgPric' => fake()->numberBetween(10, 1000000),
+            'PricFctr' => fake()->numberBetween(10, 10000),
+            'BalVal' => fake()->numberBetween(10, 1000000),
         ];
     }
 }

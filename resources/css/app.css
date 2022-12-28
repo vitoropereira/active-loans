@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer body {
+    body {
+        @apply bg-gray-300;
+    }
+}

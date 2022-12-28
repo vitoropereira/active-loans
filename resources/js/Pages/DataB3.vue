@@ -126,7 +126,8 @@ const formGraphics = useForm({
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr v-for="report in lindingOpenPossitionData.data" :key="report.id">
+                                                <tr v-if="lindingOpenPossitionData.data"
+                                                    v-for="report in lindingOpenPossitionData.data" :key="report.id">
                                                     <td class="px-3 py-5 text-sm bg-white border-b border-gray-200">
                                                         <p class="text-gray-900 whitespace-no-wrap">
                                                             {{ report.RptDt }}
@@ -167,6 +168,9 @@ const formGraphics = useForm({
                                                             {{ report.BalVal }}
                                                         </p>
                                                     </td>
+                                                </tr>
+                                                <tr v-else>
+                                                    <td colspan="7">Nenhum dado encontrado neste dia. </td>
                                                 </tr>
                                             </tbody>
                                         </table>
