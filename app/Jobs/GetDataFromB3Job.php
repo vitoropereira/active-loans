@@ -50,7 +50,7 @@ class GetDataFromB3Job implements ShouldQueue
      */
     public function handle()
     {
-        $dates = $this->getDates(5);
+        $dates = $this->getDates(15);
 
         foreach ($dates as $date) {
             $alreadyBeenTakens = DB::table('date_has_already_been_takens')

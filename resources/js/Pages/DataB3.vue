@@ -96,7 +96,7 @@ const formGraphics = useForm({
                                                     </th>
                                                     <th scope="col"
                                                         class="px-3 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                                                        Ticker Symbol
+                                                        Símbolo
                                                     </th>
                                                     <th scope="col"
                                                         class="px-3 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
@@ -108,19 +108,19 @@ const formGraphics = useForm({
                                                     </th>
                                                     <th scope="col"
                                                         class="px-3 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                                                        Balance Quantity
+                                                        Quantidade de Saldo
                                                     </th>
                                                     <th scope="col"
                                                         class="px-3 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                                                        Average Trade Price
+                                                        Preço Médio de Negociação
                                                     </th>
                                                     <th scope="col"
                                                         class="px-3 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                                                        Price Factor
+                                                        Fator de preço
                                                     </th>
                                                     <th scope="col"
                                                         class="px-3 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                                                        Balance Value
+                                                        Valor do Saldo
                                                     </th>
 
                                                 </tr>

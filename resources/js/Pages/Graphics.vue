@@ -96,23 +96,19 @@ export default {
                     {
                         label: 'Saldo',
                         data: [],
-                        backgroundColor: color1[Math.floor(Math.random() * 4)]
-                    },
-                    {
-                        label: 'Preço Médio',
-                        data: [],
-                        backgroundColor: color2[Math.floor(Math.random() * 4)]
+                        backgroundColor: color1[Math.floor(Math.random() * 4)],
+                        borderColor: '#0000CD',
+                        fill: false,
+                        borderJoinStyle: 'miter'
                     }
                 ]
             };
-
             data.forEach(item => {
-
+                console.log('item')
+                console.log(item)
                 chartData.labels.push(item.RptDt);
                 chartData.datasets[0].data.push(parseFloat(item.BalVal));
-                chartData.datasets[1].data.push(parseFloat(item.TradAvrgPric));
             });
-
             return chartData;
         },
         updateChart(data) {
@@ -122,7 +118,7 @@ export default {
                 this.chart.update();
             } else {
                 const chartConfig = {
-                    type: 'bar',
+                    type: 'line',
                     data: data,
                     options: {
                         responsive: true,
